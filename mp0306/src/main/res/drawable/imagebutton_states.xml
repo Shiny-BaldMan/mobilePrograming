@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 버튼을 눌렀을 때의 이미지 [6] -->
+    <item android:drawable="@drawable/btn_pressed" android:state_pressed="true" />
+
+    <!-- 버튼에 포커스가 맞춰졌을 때의 이미지 [6] -->
+    <item android:drawable="@drawable/btn_focused" android:state_focused="true" />
+
+    <!-- 기본 상태일 때의 이미지 [6] -->
+    <item android:drawable="@drawable/btn_normal" />
+</selector>
