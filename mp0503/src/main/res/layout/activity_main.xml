@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5F8"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RadioButton 실습"
+            android:textColor="#558B2F"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="고양이와 같은 그림자를 골라 주세요."
+            android:textColor="#222222"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="240dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:contentDescription="문제의 고양이"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cat" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioAnswer1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="48dp"
+                android:text="1번"
+                android:textColor="#222222"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radioAnswer2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="48dp"
+                android:text="2번"
+                android:textColor="#222222"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radioAnswer3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="48dp"
+                android:text="3번"
+                android:textColor="#222222"
+                android:textSize="14sp" />
+
+            <RadioButton
+                android:id="@+id/radioAnswer4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:minHeight="48dp"
+                android:text="4번"
+                android:textColor="#222222"
+                android:textSize="14sp" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgAnswer1"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:contentDescription="1번 그림자 선택"
+                android:scaleType="fitCenter"
+                android:src="@drawable/cat1" />
+
+            <ImageView
+                android:id="@+id/imgAnswer2"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:contentDescription="2번 그림자 선택"
+                android:scaleType="fitCenter"
+                android:src="@drawable/cat2" />
+
+            <ImageView
+                android:id="@+id/imgAnswer3"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:contentDescription="3번 그림자 선택"
+                android:scaleType="fitCenter"
+                android:src="@drawable/cat3" />
+
+            <ImageView
+                android:id="@+id/imgAnswer4"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:contentDescription="4번 그림자 선택"
+                android:scaleType="fitCenter"
+                android:src="@drawable/cat4" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

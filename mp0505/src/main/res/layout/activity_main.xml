@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5F8"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Switch 실습"
+            android:textColor="#558B2F"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="스위치로 고양이와 조명을 조작해보세요."
+            android:textColor="#222222"
+            android:textSize="17sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="28dp">
+
+            <ImageView
+                android:id="@+id/imgWindow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="창문과 바깥 풍경"
+                android:scaleType="fitXY"
+                android:src="@drawable/window" />
+
+            <ImageView
+                android:id="@+id/imgLight"
+                android:layout_width="70dp"
+                android:layout_height="46dp"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="20dp"
+                android:contentDescription="꺼진 조명"
+                android:scaleType="fitCenter"
+                android:src="@drawable/light31" />
+
+            <ImageView
+                android:id="@+id/imgCat"
+                android:layout_width="110dp"
+                android:layout_height="85dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="18dp"
+                android:contentDescription="창가의 검은 고양이"
+                android:scaleType="fitCenter"
+                android:src="@drawable/cat5" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <Switch
+                android:id="@+id/switchCat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="12dp"
+                android:minHeight="48dp"
+                android:checked="true"
+                android:showText="false"
+                android:splitTrack="false"
+                android:switchMinWidth="60dp"
+                android:switchPadding="8dp"
+                android:text="고양이"
+                android:textColor="#222222"
+                android:textSize="16sp"
+                android:thumb="@drawable/switch_thumb"
+                android:thumbTint="@null"
+                android:trackTint="#BDBDBD" />
+
+            <Switch
+                android:id="@+id/switchLight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="12dp"
+                android:minHeight="48dp"
+                android:checked="false"
+                android:showText="false"
+                android:splitTrack="false"
+                android:switchMinWidth="60dp"
+                android:switchPadding="8dp"
+                android:text="라이트"
+                android:textColor="#222222"
+                android:textSize="16sp"
+                android:thumb="@drawable/switch_thumb"
+                android:thumbTint="@null"
+                android:trackTint="#BDBDBD" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="고양이: ON / 라이트: OFF"
+            android:textColor="#555555"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+</ScrollView>

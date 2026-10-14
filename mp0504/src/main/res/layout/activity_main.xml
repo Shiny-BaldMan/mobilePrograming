@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5F8"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ToggleButton 실습"
+            android:textColor="#558B2F"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="벽의 스위치를 눌러 조명을 켜고 꺼보세요."
+            android:textColor="#222222"
+            android:textSize="17sp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_marginTop="24dp">
+
+            <ImageView
+                android:id="@+id/imgRoom"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="불 꺼진 방"
+                android:scaleType="fitXY"
+                android:src="@drawable/bg1" />
+
+            <LinearLayout
+                android:layout_width="156dp"
+                android:layout_height="145dp"
+                android:layout_gravity="top|center_horizontal"
+                android:gravity="top"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgLight1"
+                    android:layout_width="52dp"
+                    android:layout_height="112dp"
+                    android:contentDescription="조명 1"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/light11" />
+
+                <ImageView
+                    android:id="@+id/imgLight2"
+                    android:layout_width="52dp"
+                    android:layout_height="145dp"
+                    android:contentDescription="조명 2"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/light12" />
+
+                <ImageView
+                    android:id="@+id/imgLight3"
+                    android:layout_width="52dp"
+                    android:layout_height="130dp"
+                    android:contentDescription="조명 3"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/light13" />
+
+            </LinearLayout>
+
+            <ToggleButton
+                android:id="@+id/toggleLight"
+                android:layout_width="48dp"
+                android:layout_height="66dp"
+                android:layout_gravity="top|end"
+                android:layout_marginTop="108dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/toggle_background"
+                android:backgroundTint="@null"
+                android:checked="false"
+                android:contentDescription="방 조명 스위치"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:padding="0dp"
+                android:text=""
+                android:textOff=""
+                android:textOn=""
+                app:backgroundTint="@null" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/txtLightState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="조명이 꺼져 있습니다."
+            android:textColor="#666666"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>
