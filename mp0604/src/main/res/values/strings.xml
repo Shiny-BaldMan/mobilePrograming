@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">mp0604 · 웹 바로가기</string>
+    <string name="title">ImplicitIntent 실습</string>
+    <string name="help">웹 주소를 입력하면 브라우저 앱으로 연결합니다.</string>
+    <string name="url_hint">예: www.ssu.ac.kr</string>
+    <string name="open">웹페이지보기</string>
+    <string name="invalid">올바른 http 또는 https 웹 주소를 입력해 주세요.</string>
+    <string name="no_browser">웹페이지를 열 수 있는 브라우저 앱이 없습니다.</string>
+    <string name="tip">https://를 생략하면 자동으로 추가합니다.</string>
+</resources>

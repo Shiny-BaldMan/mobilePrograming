@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">mp0605 · 메일 작성</string>
+    <string name="title">IntentFilter 실습</string>
+    <string name="help">받는 사람과 내용을 입력한 뒤 이메일 앱에서 확인하세요.</string>
+    <string name="recipient_hint">받는 사람 이메일</string>
+    <string name="subject_hint">제목</string>
+    <string name="body_hint">내용</string>
+    <string name="send">메일보내기</string>
+    <string name="tip">버튼을 누르면 작성 화면만 열립니다. 실제 전송은 이메일 앱에서 진행하세요.</string>
+    <string name="invalid">받는 사람의 이메일 주소를 확인해 주세요.</string>
+    <string name="no_mail">이메일 앱이 없습니다. 메일 앱을 설치하고 계정을 설정해 주세요.</string>
+</resources>

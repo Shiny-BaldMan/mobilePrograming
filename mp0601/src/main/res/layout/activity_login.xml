@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#FFF7FB">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="ExplicitIntent 실습" android:textColor="#8BC34A" android:textStyle="bold|italic" android:textSize="25sp" />
+            <ImageView android:layout_width="match_parent" android:layout_height="150dp" android:src="@drawable/user" android:scaleType="fitCenter" android:contentDescription="@string/login_title" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:text="LOGIN" android:textColor="#76A6F0" android:textSize="22sp" />
+            <FrameLayout android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="8dp">
+                <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/id_before" android:scaleType="fitXY" android:importantForAccessibility="no" />
+                <EditText android:id="@+id/username" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="52dp" android:layout_marginEnd="12dp" android:background="@android:color/transparent" android:hint="@string/user_hint" android:inputType="text" android:singleLine="true" android:textSize="16sp" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="8dp">
+                <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/passwd_before" android:scaleType="fitXY" android:importantForAccessibility="no" />
+                <EditText android:id="@+id/password" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginStart="52dp" android:layout_marginEnd="12dp" android:background="@android:color/transparent" android:hint="@string/password_hint" android:inputType="textPassword" android:singleLine="true" android:textSize="16sp" />
+            </FrameLayout>
+            <androidx.appcompat.widget.AppCompatButton android:id="@+id/loginButton" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginTop="20dp" android:background="@drawable/button" app:backgroundTint="@null" android:text="@string/login" android:textColor="#FFFFFF" android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

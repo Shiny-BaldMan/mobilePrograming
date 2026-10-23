@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">mp0602 · 다른 곳 찾기</string>
+    <string name="title">ExplicitIntent 실습</string>
+    <string name="help">그림을 선택하세요</string>
+    <string name="park">고양이</string>
+    <string name="camp">강아지</string>
+    <string name="start">시작하기</string>
+    <string name="back">재시작하기</string>
+    <string name="game_help">위·아래 그림 중 다른 부분을 터치하세요.</string>
+    <string name="progress">발견한 곳 %1$d / 5</string>
+    <string name="correct">맞았습니다</string>
+    <string name="wrong">틀렸습니다</string>
+    <string name="duplicate">이미 찾은 곳입니다</string>
+    <string name="complete">5개 모두 선택했습니다</string>
+    <string name="board_desc">위아래 그림의 다른 부분을 찾는 게임</string>
+</resources>

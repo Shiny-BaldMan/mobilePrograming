@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#FFF7FB">
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="ExplicitIntent 실습" android:textColor="#8BC34A" android:textStyle="bold|italic" android:textSize="25sp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:text="@string/help" android:textSize="16sp" android:textColor="#192C48" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="180dp" android:orientation="horizontal">
+                <ImageView android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:src="@drawable/cat01" android:scaleType="fitCenter" android:contentDescription="@string/park" />
+                <ImageView android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent" android:src="@drawable/dog01" android:scaleType="fitCenter" android:contentDescription="@string/camp" />
+            </LinearLayout>
+            <RadioGroup android:id="@+id/sceneChoice" android:layout_width="match_parent" android:layout_height="wrap_content" android:checkedButton="@id/parkChoice" android:orientation="horizontal">
+                <RadioButton android:id="@+id/parkChoice" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:text="@string/park" />
+                <RadioButton android:id="@+id/campChoice" android:layout_width="0dp" android:layout_weight="1" android:layout_height="48dp" android:text="@string/camp" />
+            </RadioGroup>
+            <Button android:id="@+id/startButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:minHeight="52dp" android:text="@string/start" android:textAllCaps="false" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

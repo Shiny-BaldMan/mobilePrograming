@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <style name="Theme.IntentLab" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">#00ACC1</item>
+        <item name="colorPrimaryVariant">#008B9E</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#167D8D</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+</resources>
