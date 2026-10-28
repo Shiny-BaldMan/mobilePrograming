@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:fitsSystemWindows="true" android:background="#F6F7F2">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:text="어느 쪽이 더 클까?" android:textSize="26sp" android:textColor="#233B42" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:text="가운데 동그라미를 길게 누르고 기호를 고르세요." android:textSize="16sp" android:textColor="#233B42" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:text="고양이" android:textSize="18sp" android:textColor="#233B42" />
+            <FrameLayout android:layout_width="match_parent" android:layout_height="160dp">
+                <ImageView android:id="@+id/question1" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/question01" android:scaleType="fitCenter" android:contentDescription="고양이 크기 비교" />
+                <ImageView android:id="@+id/sign1" android:layout_width="56dp" android:layout_height="56dp" android:src="@drawable/sign" android:scaleType="fitCenter" android:contentDescription="고양이 비교 기호, 길게 눌러 선택" android:layout_gravity="center" android:focusable="true" />
+            </FrameLayout>
+            <TextView android:id="@+id/result1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:text="아직 선택하지 않았어요." android:textSize="16sp" android:textColor="#233B42" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:text="강아지" android:textSize="18sp" android:textColor="#233B42" />
+            <FrameLayout android:layout_width="match_parent" android:layout_height="160dp">
+                <ImageView android:id="@+id/question2" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/question02" android:scaleType="fitCenter" android:contentDescription="강아지 크기 비교" />
+                <ImageView android:id="@+id/sign2" android:layout_width="56dp" android:layout_height="56dp" android:src="@drawable/sign" android:scaleType="fitCenter" android:contentDescription="강아지 비교 기호, 길게 눌러 선택" android:layout_gravity="center" android:focusable="true" />
+            </FrameLayout>
+            <TextView android:id="@+id/result2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:text="아직 선택하지 않았어요." android:textSize="16sp" android:textColor="#233B42" />
+            <Button android:id="@+id/resetButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:minHeight="52dp" android:text="다시 고르기" android:textAllCaps="false" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

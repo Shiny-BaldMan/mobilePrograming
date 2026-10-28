@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:fitsSystemWindows="true" android:background="#F6F7F2">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:background="#24796F" android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:text="그림 속 숫자를 계산해요" android:textSize="24sp" android:textColor="#233B42" />
+            <ImageView android:id="@+id/legend" android:layout_width="match_parent" android:layout_height="70dp" android:src="@drawable/image" android:scaleType="fitCenter" android:contentDescription="체리 3, 레몬 6, 사과 8, 바나나 1" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:text="과일의 값을 더하거나 빼서 답을 입력하세요." android:textSize="16sp" android:textColor="#233B42" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="110dp" android:gravity="center" android:orientation="horizontal">
+                <ImageView android:id="@+id/fruit0" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/fruit1" android:scaleType="fitCenter" android:contentDescription="과일" android:layout_weight="1" />
+                <TextView android:id="@+id/operator0" android:layout_width="32dp" android:layout_height="match_parent" android:gravity="center" android:text="+" android:textSize="28sp" />
+                <ImageView android:id="@+id/fruit1" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/fruit1" android:scaleType="fitCenter" android:contentDescription="과일" android:layout_weight="1" />
+                <TextView android:id="@+id/operator1" android:layout_width="32dp" android:layout_height="match_parent" android:gravity="center" android:text="+" android:textSize="28sp" />
+                <ImageView android:id="@+id/fruit2" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/fruit1" android:scaleType="fitCenter" android:contentDescription="과일" android:layout_weight="1" />
+            </LinearLayout>
+            <EditText android:id="@+id/answerInput" android:layout_width="match_parent" android:layout_height="56dp" android:hint="답 입력 (음수 가능)" android:inputType="numberSigned" android:singleLine="true" android:gravity="center" android:textSize="24sp" />
+            <Button android:id="@+id/checkButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:minHeight="52dp" android:text="정답 확인" android:textAllCaps="false" />
+            <Button android:id="@+id/nextButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:minHeight="52dp" android:text="다른 문제" android:textAllCaps="false" />
+            <TextView android:id="@+id/feedback" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:text="정답과 오답 횟수는 위쪽에 표시됩니다." android:textSize="16sp" android:textColor="#233B42" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

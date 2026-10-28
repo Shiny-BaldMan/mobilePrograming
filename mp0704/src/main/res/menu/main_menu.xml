@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/positive" android:title="찬성" app:showAsAction="always" />
+    <item android:id="@+id/negative" android:title="반대" app:showAsAction="always" />
+    <item android:id="@+id/reset" android:title="초기화" app:showAsAction="never" />
+    <item android:id="@+id/close" android:title="종료" app:showAsAction="never" />
+</menu>

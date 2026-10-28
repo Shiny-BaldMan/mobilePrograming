@@ -31,9 +31,13 @@
             <option value="$PROJECT_DIR$/mp0603" />
             <option value="$PROJECT_DIR$/mp0604" />
             <option value="$PROJECT_DIR$/mp0605" />
+            <option value="$PROJECT_DIR$/mp0701" />
+            <option value="$PROJECT_DIR$/mp0702" />
+            <option value="$PROJECT_DIR$/mp0703" />
+            <option value="$PROJECT_DIR$/mp0704" />
+            <option value="$PROJECT_DIR$/mp0705" />
           </set>
         </option>
-        <option name="resolveExternalAnnotations" value="false" />
       </GradleProjectSettings>
     </option>
   </component>

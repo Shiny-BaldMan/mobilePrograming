@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:fitsSystemWindows="true" android:background="#F6F7F2">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:text="동물 줄 세우기" android:textSize="26sp" android:textColor="#233B42" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:text="정렬 방법을 선택하면 크기 순서대로 바뀝니다." android:textSize="16sp" android:textColor="#233B42" />
+            <Button android:id="@+id/sortButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:minHeight="52dp" android:text="정렬 방법 선택" android:textAllCaps="false" />
+            <TextView android:id="@+id/sortLabel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:text="아직 정렬하지 않았어요." android:textSize="18sp" android:textColor="#233B42" />
+            <ImageView android:id="@+id/direction" android:layout_width="match_parent" android:layout_height="56dp" android:src="@drawable/bg_small2big" android:scaleType="fitCenter" android:contentDescription="정렬 방향" android:visibility="gone" />
+            <LinearLayout android:id="@+id/animalList" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" />
+            <Button android:id="@+id/shuffleButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:minHeight="52dp" android:text="다시 섞기" android:textAllCaps="false" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

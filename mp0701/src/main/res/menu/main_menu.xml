@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/add" android:title="덧셈" app:showAsAction="never" />
+    <item android:id="@+id/subtract" android:title="뺄셈" app:showAsAction="never" />
+    <item android:id="@+id/multiply" android:title="곱셈" app:showAsAction="never" />
+    <item android:id="@+id/divide" android:title="나눗셈" app:showAsAction="never" />
+</menu>

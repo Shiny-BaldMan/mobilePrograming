@@ -1,0 +1,5 @@
+<?xml version='1.0' encoding='utf-8'?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/ascending" android:title="작은 동물부터" app:showAsAction="never" />
+    <item android:id="@+id/descending" android:title="큰 동물부터" app:showAsAction="never" />
+</menu>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='utf-8'?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:fitsSystemWindows="true" android:background="#F6F7F2">
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:fillViewport="true">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:text="당신의 생각은?" android:textSize="26sp" android:textColor="#233B42" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:text="찬성과 반대를 눌러 보세요. 위쪽 앱 바에 횟수가 쌓입니다." android:textSize="16sp" android:textColor="#233B42" />
+            <ImageView android:id="@+id/questionImage" android:layout_width="match_parent" android:layout_height="260dp" android:src="@drawable/image" android:scaleType="fitCenter" android:contentDescription="찬성과 반대를 고민하는 사람" />
+            <Button android:id="@+id/agreeButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:minHeight="52dp" android:text="찬성 +1" android:textAllCaps="false" />
+            <Button android:id="@+id/disagreeButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:minHeight="52dp" android:text="반대 +1" android:textAllCaps="false" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="12dp" android:text="오른쪽 위 메뉴에서 횟수를 초기화할 수 있어요." android:textSize="16sp" android:textColor="#233B42" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

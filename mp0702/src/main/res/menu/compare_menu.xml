@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/greater" android:title="왼쪽이 더 커요 &gt;" app:showAsAction="never" />
+    <item android:id="@+id/less" android:title="오른쪽이 더 커요 &lt;" app:showAsAction="never" />
+    <item android:id="@+id/equal" android:title="서로 같아요 =" app:showAsAction="never" />
+</menu>
